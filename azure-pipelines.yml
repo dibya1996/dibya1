@@ -44,5 +44,5 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Deployment Scripts (Azure)'
   inputs:
-    PathtoPublish: C:\azureDemo\dibya1
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: AzureDeploymentScripts
